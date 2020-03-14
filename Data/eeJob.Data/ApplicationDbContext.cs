@@ -26,6 +26,24 @@
 
         public DbSet<Setting> Settings { get; set; }
 
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Town> Towns { get; set; }
+
+        public DbSet<Language> Languages { get; set; }
+
+        public DbSet<CV> CVs { get; set; }
+
+        public DbSet<CoverLetter> CoverLetters { get; set; }
+
+        public DbSet<Application> Applications { get; set; }
+
+        public DbSet<Offer> Offers { get; set; }
+
+        public DbSet<Company> Companies { get; set; }
+
+        public DbSet<Employee> Employees { get; set; }
+
         public override int SaveChanges() => this.SaveChanges(true);
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)
